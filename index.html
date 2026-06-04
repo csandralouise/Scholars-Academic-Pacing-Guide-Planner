@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Scholar's Planner — Academic Pacing Guide</title>
+<meta name="description" content="A comprehensive academic pacing guide to help students plan their coursework, manage deadlines, and stay on track for success.">
+<meta name="author" content="Sandra Cooper">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -1348,7 +1350,7 @@ table.curriculum-table {
       <div id="welcomeBanner" class="welcome-banner">
         <div class="welcome-left">
           <div class="welcome-greeting" id="welcomeGreeting">Welcome Back, Scholar 👋</div>
-          <div class="welcome-sub">Stay consistent, trust God in the process, and watch the progress grow.</div>
+          <div class="welcome-sub">Stay consistent, trust God in the process, and watch your progress grow.</div>
         </div>
         <div class="welcome-date" id="welcomeDate"></div>
       </div>
@@ -1709,18 +1711,18 @@ function refreshCourseDropdowns() {
 }
 
 const QUOTES = [
-  '"Education is the passport to the future." — Malcolm X',
-  '"The more that you read, the more things you will know." — Dr. Seuss',
-  '"An investment in knowledge pays the best interest." — Benjamin Franklin',
-  '"Live as if you were to die tomorrow. Learn as if you were to live forever." — Gandhi',
-  '"The mind is not a vessel to be filled, but a fire to be kindled." — Plutarch',
-  '"The capacity to learn is a gift; the ability to learn is a skill." — Brian Herbert',
-  '"Education is not the filling of a pail, but the lighting of a fire." — W.B. Yeats',
-  '"It does not matter how slowly you go as long as you do not stop." — Confucius',
-  '"Success is the sum of small efforts, repeated day in and day out." — Robert Collier',
-  '"Strive for progress, not perfection." — Unknown',
-  '"He who learns but does not think is lost." — Confucius',
-  '"Discipline is the bridge between goals and accomplishment." — Jim Rohn',
+  '"Education is the passport to the future." - Malcolm X',
+  '"The more that you read, the more things you will know." - Dr. Seuss',
+  '"An investment in knowledge pays the best interest." - Benjamin Franklin',
+  '"Live as if you were to die tomorrow. Learn as if you were to live forever." - Gandhi',
+  '"The mind is not a vessel to be filled, but a fire to be kindled." - Plutarch',
+  '"The capacity to learn is a gift; the ability to learn is a skill." - Brian Herbert',
+  '"Education is not the filling of a pail, but the lighting of a fire." - W.B. Yeats',
+  '"It does not matter how slowly you go as long as you do not stop." - Confucius',
+  '"Success is the sum of small efforts, repeated day in and day out." - Robert Collier',
+  '"Strive for progress, not perfection." - Unknown',
+  '"He who learns but does not think is lost." - Confucius',
+  '"Discipline is the bridge between goals and accomplishment." - Jim Rohn',
 ];
 
 function loadData(key, defaultVal) {
@@ -3075,7 +3077,7 @@ const STUDY_ROUTINES = [
     title: 'Working Student Routine',
     subtitle: 'For students juggling work, classes & study',
     accentColor: 'c1',
-    match: 'You — Mon–Fri 9–5 work schedule',
+    match: 'You — Mon-Fri 9-5 work schedule',
     recommended: true,
     timerFocus: 90,
     timerBreak: 30,
@@ -3084,23 +3086,23 @@ const STUDY_ROUTINES = [
       {
         label: '📅 Weekdays (after 5 PM)',
         items: [
-          { time: '7:00–7:30 PM',  activity: 'Refresh + Snack',            sub: 'Decompress from work before studying',  tag: 'break' },
-          { time: '7:30–9:00 PM',  activity: 'Study Session (1.5hrs)',      sub: 'Focus on hardest subject first',          tag: 'study' },
-          { time: '9:00–9:30 PM',  activity: 'Dinner',                     sub: '',                                        tag: 'meal'  },
-          { time: '9:30–11:00 PM', activity: 'Study + Revision (1.5hrs)',   sub: 'Homework, notes review, practice',        tag: 'study' },
+          { time: '7:00-7:30 PM',  activity: 'Refresh + Snack',            sub: 'Decompress from work before studying',  tag: 'break' },
+          { time: '7:30-9:00 PM',  activity: 'Study Session (1.5hrs)',      sub: 'Focus on hardest subject first',          tag: 'study' },
+          { time: '9:00-9:30 PM',  activity: 'Dinner',                     sub: '',                                        tag: 'meal'  },
+          { time: '9:30-11:00 PM', activity: 'Study + Revision (1.5hrs)',   sub: 'Homework, notes review, practice',        tag: 'study' },
           { time: '11:15 PM',      activity: 'Sleep',                      sub: '',                                        tag: 'sleep' },
         ]
       },
       {
         label: '📅 Weekend (Sunday — Primary Study Day)',
         items: [
-          { time: '9:00–11:30 AM', activity: 'Major Subject (2.5hrs)',     sub: 'Deepest focus work of the week',          tag: 'study' },
-          { time: '11:30–12:30 PM',activity: 'Break',                      sub: 'Coffee, walk, relax',                     tag: 'break' },
-          { time: '12:30–2:30 PM', activity: 'Practice (2hrs)',            sub: 'Problems, labs, coding exercises',        tag: 'study' },
-          { time: '2:30–4:00 PM',  activity: 'Lunch + Rest',               sub: '',                                        tag: 'meal'  },
-          { time: '4:00–6:00 PM',  activity: 'Revision (2hrs)',            sub: 'Review all week\'s material',             tag: 'study' },
-          { time: '7:00–8:30 PM',  activity: 'Weak Topics (1.5hrs)',       sub: 'Target your most difficult areas',        tag: 'study' },
-          { time: '9:15–10:00 PM', activity: 'Weekly Planning',            sub: 'Plan next week\'s goals & schedule',      tag: 'break' },
+          { time: '9:00-11:30 AM', activity: 'Major Subject (2.5hrs)',     sub: 'Deepest focus work of the week',          tag: 'study' },
+          { time: '11:30-12:30 PM',activity: 'Break',                      sub: 'Coffee, walk, relax',                     tag: 'break' },
+          { time: '12:30-2:30 PM', activity: 'Practice (2hrs)',            sub: 'Problems, labs, coding exercises',        tag: 'study' },
+          { time: '2:30-4:00 PM',  activity: 'Lunch + Rest',               sub: '',                                        tag: 'meal'  },
+          { time: '4:00-6:00 PM',  activity: 'Revision (2hrs)',            sub: 'Review all week\'s material',             tag: 'study' },
+          { time: '7:00-8:30 PM',  activity: 'Weak Topics (1.5hrs)',       sub: 'Target your most difficult areas',        tag: 'study' },
+          { time: '9:15-10:00 PM', activity: 'Weekly Planning',            sub: 'Plan next week\'s goals & schedule',      tag: 'break' },
         ]
       }
     ]
@@ -3120,13 +3122,13 @@ const STUDY_ROUTINES = [
       {
         label: '📅 Weekdays',
         items: [
-          { time: '5:00–5:30 PM',   activity: 'Quick Snack + Relax',        sub: 'Wind down before diving in',              tag: 'break' },
-          { time: '5:30–7:00 PM',   activity: 'Study Session 1 (1.5hrs)',    sub: 'Focus on hardest subjects first',         tag: 'study' },
-          { time: '7:00–7:30 PM',   activity: 'Dinner Break',                sub: '',                                        tag: 'meal'  },
-          { time: '7:30–9:00 PM',   activity: 'Study Session 2 (1.5hrs)',    sub: 'Homework + Notes Review',                 tag: 'study' },
-          { time: '9:00–9:30 PM',   activity: 'Break',                       sub: 'Stretch, hydrate',                        tag: 'break' },
-          { time: '9:30–10:30 PM',  activity: 'Study Session 3 (1hr)',       sub: 'Flashcards / Practice Questions',         tag: 'study' },
-          { time: '10:30–11:00 PM', activity: 'Wind Down',                   sub: 'Light reading / journaling',              tag: 'break' },
+          { time: '5:00-5:30 PM',   activity: 'Quick Snack + Relax',        sub: 'Wind down before diving in',              tag: 'break' },
+          { time: '5:30-7:00 PM',   activity: 'Study Session 1 (1.5hrs)',    sub: 'Focus on hardest subjects first',         tag: 'study' },
+          { time: '7:00-7:30 PM',   activity: 'Dinner Break',                sub: '',                                        tag: 'meal'  },
+          { time: '7:30-9:00 PM',   activity: 'Study Session 2 (1.5hrs)',    sub: 'Homework + Notes Review',                 tag: 'study' },
+          { time: '9:00-9:30 PM',   activity: 'Break',                       sub: 'Stretch, hydrate',                        tag: 'break' },
+          { time: '9:30-10:30 PM',  activity: 'Study Session 3 (1hr)',       sub: 'Flashcards / Practice Questions',         tag: 'study' },
+          { time: '10:30-11:00 PM', activity: 'Wind Down',                   sub: 'Light reading / journaling',              tag: 'break' },
           { time: '11:00 PM',       activity: 'Sleep',                       sub: '',                                        tag: 'sleep' },
         ]
       }
@@ -3147,13 +3149,13 @@ const STUDY_ROUTINES = [
       {
         label: '📅 Weekdays (Late Night)',
         items: [
-          { time: '8:00–9:30 PM',   activity: 'Study Session 1 (1.5hrs)',    sub: 'Notes, Active Recall',                    tag: 'study' },
-          { time: '9:30–10:00 PM',  activity: 'Break (Snack / Walk)',        sub: '',                                        tag: 'break' },
-          { time: '10:00 PM–12:00', activity: 'Deep Focus Study (2hrs)',     sub: 'Practice Problems / Essay Writing',       tag: 'study' },
-          { time: '12:00–12:30 AM', activity: 'Quick Review',                sub: 'Summarizing Key Points',                  tag: 'study' },
-          { time: '12:30–2:00 AM',  activity: 'Final Study Sprint (1.5hrs)', sub: 'Flashcards / Memorization',               tag: 'study' },
-          { time: '2:00–2:30 AM',   activity: 'Wind Down',                   sub: 'Soft music, no screens',                  tag: 'break' },
-          { time: '2:30–9:30 AM',   activity: 'Sleep (7hrs)',                sub: 'Protect your sleep for memory retention', tag: 'sleep' },
+          { time: '8:00-9:30 PM',   activity: 'Study Session 1 (1.5hrs)',    sub: 'Notes, Active Recall',                    tag: 'study' },
+          { time: '9:30-10:00 PM',  activity: 'Break (Snack / Walk)',        sub: '',                                        tag: 'break' },
+          { time: '10:00 PM-12:00', activity: 'Deep Focus Study (2hrs)',     sub: 'Practice Problems / Essay Writing',       tag: 'study' },
+          { time: '12:00-12:30 AM', activity: 'Quick Review',                sub: 'Summarizing Key Points',                  tag: 'study' },
+          { time: '12:30-2:00 AM',  activity: 'Final Study Sprint (1.5hrs)', sub: 'Flashcards / Memorization',               tag: 'study' },
+          { time: '2:00-2:30 AM',   activity: 'Wind Down',                   sub: 'Soft music, no screens',                  tag: 'break' },
+          { time: '2:30-9:30 AM',   activity: 'Sleep (7hrs)',                sub: 'Protect your sleep for memory retention', tag: 'sleep' },
         ]
       }
     ]
@@ -3173,15 +3175,15 @@ const STUDY_ROUTINES = [
       {
         label: '📅 Weekend / Sunday',
         items: [
-          { time: '9:00–10:30 AM',  activity: 'Study Session 1 (1.5hrs)',    sub: 'Reviewing Notes & Flashcards',            tag: 'study' },
-          { time: '10:30–11:00 AM', activity: 'Break (Coffee, Music, Walk)', sub: '',                                        tag: 'break' },
-          { time: '11:00 AM–1:00',  activity: 'Deep Focus Study (2hrs)',     sub: 'Past Papers / Problem Solving',           tag: 'study' },
-          { time: '1:00–2:30 PM',   activity: 'Lunch + Chill Time',          sub: '',                                        tag: 'meal'  },
-          { time: '2:30–4:00 PM',   activity: 'Study Session 3 (1.5hrs)',    sub: 'Reading / Writing Assignments',           tag: 'study' },
-          { time: '4:00–6:00 PM',   activity: 'Social / Hobby Time',         sub: 'Rest and recharge',                       tag: 'social'},
-          { time: '6:00–7:30 PM',   activity: 'Dinner + Relax',              sub: '',                                        tag: 'meal'  },
-          { time: '7:30–9:30 PM',   activity: 'Study Session 4 (2hrs)',      sub: 'Exam Prep / Essay Writing',               tag: 'study' },
-          { time: '9:30–10:00 PM',  activity: 'Wind Down',                   sub: 'Meditation, journaling',                  tag: 'break' },
+          { time: '9:00-10:30 AM',  activity: 'Study Session 1 (1.5hrs)',    sub: 'Reviewing Notes & Flashcards',            tag: 'study' },
+          { time: '10:30-11:00 AM', activity: 'Break (Coffee, Music, Walk)', sub: '',                                        tag: 'break' },
+          { time: '11:00 AM-1:00',  activity: 'Deep Focus Study (2hrs)',     sub: 'Past Papers / Problem Solving',           tag: 'study' },
+          { time: '1:00-2:30 PM',   activity: 'Lunch + Chill Time',          sub: '',                                        tag: 'meal'  },
+          { time: '2:30-4:00 PM',   activity: 'Study Session 3 (1.5hrs)',    sub: 'Reading / Writing Assignments',           tag: 'study' },
+          { time: '4:00-6:00 PM',   activity: 'Social / Hobby Time',         sub: 'Rest and recharge',                       tag: 'social'},
+          { time: '6:00-7:30 PM',   activity: 'Dinner + Relax',              sub: '',                                        tag: 'meal'  },
+          { time: '7:30-9:30 PM',   activity: 'Study Session 4 (2hrs)',      sub: 'Exam Prep / Essay Writing',               tag: 'study' },
+          { time: '9:30-10:00 PM',  activity: 'Wind Down',                   sub: 'Meditation, journaling',                  tag: 'break' },
         ]
       }
     ]
@@ -3201,17 +3203,17 @@ const STUDY_ROUTINES = [
       {
         label: '📅 Full Day Study / Exam Preparation',
         items: [
-          { time: '5:30–6:00 AM',   activity: 'Wake Up + Coffee / Tea',      sub: 'Ease into your morning',                  tag: 'break' },
-          { time: '6:00–8:00 AM',   activity: 'Study Session 1 (2hrs)',       sub: 'Hardest Topics First',                    tag: 'study' },
-          { time: '8:00–8:30 AM',   activity: 'Breakfast + Short Walk',       sub: 'Fuel up and reset',                       tag: 'meal'  },
-          { time: '8:30–10:30 AM',  activity: 'Study Session 2 (2hrs)',       sub: 'Practice Questions & Flashcards',         tag: 'study' },
-          { time: '10:30–11:00 AM', activity: 'Break (Stretch, Hydrate)',     sub: '',                                        tag: 'break' },
-          { time: '11:00 AM–12:30', activity: 'Study Session 3 (1.5hrs)',     sub: 'Reading & Reviewing Notes',               tag: 'study' },
-          { time: '12:30–2:00 PM',  activity: 'Lunch + Free Time',            sub: '',                                        tag: 'meal'  },
-          { time: '2:00–4:00 PM',   activity: 'Study Session 4 (2hrs)',       sub: 'Self / Group Study / Discussions',        tag: 'study' },
-          { time: '4:00–6:00 PM',   activity: 'Hobby / Exercise / Social',    sub: '',                                        tag: 'social'},
-          { time: '6:00–7:30 PM',   activity: 'Dinner + Relax',               sub: '',                                        tag: 'meal'  },
-          { time: '7:30–9:00 PM',   activity: 'Final Review / Light Study',   sub: '1.5hrs — light wrap-up',                  tag: 'study' },
+          { time: '5:30-6:00 AM',   activity: 'Wake Up + Coffee / Tea',      sub: 'Ease into your morning',                  tag: 'break' },
+          { time: '6:00-8:00 AM',   activity: 'Study Session 1 (2hrs)',       sub: 'Hardest Topics First',                    tag: 'study' },
+          { time: '8:00-8:30 AM',   activity: 'Breakfast + Short Walk',       sub: 'Fuel up and reset',                       tag: 'meal'  },
+          { time: '8:30-10:30 AM',  activity: 'Study Session 2 (2hrs)',       sub: 'Practice Questions & Flashcards',         tag: 'study' },
+          { time: '10:30-11:00 AM', activity: 'Break (Stretch, Hydrate)',     sub: '',                                        tag: 'break' },
+          { time: '11:00 AM-12:30', activity: 'Study Session 3 (1.5hrs)',     sub: 'Reading & Reviewing Notes',               tag: 'study' },
+          { time: '12:30-2:00 PM',  activity: 'Lunch + Free Time',            sub: '',                                        tag: 'meal'  },
+          { time: '2:00-4:00 PM',   activity: 'Study Session 4 (2hrs)',       sub: 'Self / Group Study / Discussions',        tag: 'study' },
+          { time: '4:00-6:00 PM',   activity: 'Hobby / Exercise / Social',    sub: '',                                        tag: 'social'},
+          { time: '6:00-7:30 PM',   activity: 'Dinner + Relax',               sub: '',                                        tag: 'meal'  },
+          { time: '7:30-9:00 PM',   activity: 'Final Review / Light Study',   sub: '1.5hrs — light wrap-up',                  tag: 'study' },
         ]
       }
     ]
@@ -3310,7 +3312,7 @@ function initWelcomeBanner() {
   if (hour >= 5 && hour < 12)       timeGreeting = 'Good Morning, Scholar ☀️';
   else if (hour >= 12 && hour < 17) timeGreeting = 'Good Afternoon, Scholar 📖';
   else if (hour >= 17 && hour < 21) timeGreeting = 'Good Evening, Scholar 🌆';
-  else                               timeGreeting = 'Burning Midnight Oil, Scholar 🌙';
+  else                              timeGreeting = 'Burning Midnight Oil, Scholar 🌙';
 
   const greetingEl = document.getElementById('welcomeGreeting');
   if (greetingEl) greetingEl.textContent = timeGreeting;
