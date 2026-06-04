@@ -12,38 +12,42 @@
    CSS VARIABLES & RESET
 =========================== */
 :root {
-  --bg: #f5f0e8;
-  --bg2: #ede7d9;
-  --surface: #fdfaf4;
-  --surface2: #f7f2e9;
-  --border: #d9cfc0;
-  --border2: #c8bfaf;
-  --text: #2c2416;
-  --text2: #6b5d4a;
-  --text3: #9c8b77;
-  --accent: #7c5c3a;
-  --accent2: #a87d52;
-  --accent3: #c9a26d;
-  --sunday: #4a7c59;
-  --sunday-light: #e8f5ec;
-  --saturday: #c0b8ae;
-  --saturday-light: #f0ece7;
-  --warning: #b85c38;
-  --warning-light: #fdf0ec;
-  --success: #4a7c59;
-  --success-light: #e8f5ec;
+  /* ── Clean, Crisp Light Mode ─────────────────────────────────
+     Pure white base, clear contrast text, vivid teal accents,
+     orange-yellow CTAs. Easy to read; nothing muddy or dull.
+  ─────────────────────────────────────────────────────────── */
+  --bg:       #f0f4f5;
+  --bg2:      #e3ecee;
+  --surface:  #ffffff;
+  --surface2: #f4f9fa;
+  --border:   #c2d6da;
+  --border2:  #a8c5cb;
+  --text:     #0f2226;
+  --text2:    #2e6e78;
+  --text3:    #5a9aa4;
+  --accent:   #0d7a8a;
+  --accent2:  #0a9aad;
+  --accent3:  #0bbdd4;
+  --sunday:        #0d7a8a;
+  --sunday-light:  #d6f5f7;
+  --saturday:      #94b8bd;
+  --saturday-light:#e8f3f5;
+  --warning:       #c93a1a;
+  --warning-light: #fdecea;
+  --success:       #1a8a4a;
+  --success-light: #d6f5e3;
 
-  /* Course colors */
-  --c1: #7c5c3a; --c1-light: #f5eee6;
-  --c2: #4a7c59; --c2-light: #e8f5ec;
-  --c3: #4a5c7c; --c3-light: #e8ecf5;
-  --c4: #7c4a5c; --c4-light: #f5e8ee;
+  /* Course colors — vivid, distinct */
+  --c1: #0d7a8a; --c1-light: #d6f5f7;
+  --c2: #1a8a4a; --c2-light: #d6f5e3;
+  --c3: #5a3abf; --c3-light: #ede8fb;
+  --c4: #c93a7a; --c4-light: #fce8f2;
 
-  --shadow: 0 2px 12px rgba(44,36,22,0.08);
-  --shadow2: 0 4px 24px rgba(44,36,22,0.13);
+  --shadow: 0 2px 12px rgba(13,34,38,0.08);
+  --shadow2: 0 4px 24px rgba(13,34,38,0.14);
   --cta: #f59e0b;
   --cta2: #f97316;
-  --cta-light: #fef9ed;
+  --cta-light: #fef3d6;
   --radius: 12px;
   --radius2: 8px;
   --font-display: 'Inter', system-ui, -apple-system, sans-serif;
@@ -109,8 +113,8 @@ body {
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
   transition: background var(--transition), color var(--transition);
 }
 
@@ -152,10 +156,10 @@ body {
 
 .header-title {
   font-family: var(--font-display);
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: 700;
   color: var(--accent);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .header-sub {
@@ -192,14 +196,15 @@ body {
   background: var(--c1-light);
   border: 1px solid var(--border);
   color: var(--text2);
-  font-size: 11px;
+  font-size: 12.5px;
   font-style: italic;
-  padding: 5px 14px;
+  padding: 6px 16px;
   border-radius: 20px;
   max-width: 480px;
   white-space: normal;
-  line-height: 1.4;
+  line-height: 1.45;
   text-align: center;
+  font-weight: 500;
 }
 
 /* ===========================
@@ -217,10 +222,10 @@ body {
 .tab-btn {
   background: none;
   border: none;
-  padding: 14px 18px;
+  padding: 14px 20px;
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 13.5px;
+  font-size: 14.5px;
   color: var(--text3);
   white-space: nowrap;
   border-bottom: 3px solid transparent;
@@ -266,8 +271,8 @@ body {
 
 .card-title {
   font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 17px;
+  font-weight: 600;
   color: var(--accent);
   margin-bottom: 14px;
   display: flex;
@@ -277,12 +282,12 @@ body {
 
 .section-title {
   font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--text);
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -319,11 +324,11 @@ body {
   background: var(--accent);
   color: #fff;
   border: none;
-  padding: 9px 18px;
+  padding: 10px 20px;
   border-radius: var(--radius2);
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 500;
   transition: all var(--transition);
   display: inline-flex;
@@ -341,12 +346,12 @@ body {
 
 input, select, textarea {
   background: var(--surface2);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   color: var(--text);
-  padding: 8px 12px;
+  padding: 9px 13px;
   border-radius: var(--radius2);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   width: 100%;
   transition: border-color var(--transition);
 }
@@ -355,13 +360,13 @@ input:focus, select:focus, textarea:focus {
   border-color: var(--accent3);
 }
 
-label { font-size: 12px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 4px; margin-top: 12px; }
+label { font-size: 13px; color: var(--text2); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; display: block; margin-bottom: 5px; margin-top: 14px; }
 label:first-child { margin-top: 0; }
 
 .alert {
-  padding: 12px 16px;
+  padding: 13px 18px;
   border-radius: var(--radius2);
-  font-size: 13.5px;
+  font-size: 14.5px;
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -372,28 +377,78 @@ label:first-child { margin-top: 0; }
 .alert.info { background: var(--c3-light); border: 1px solid var(--c3); color: var(--c3); }
 
 /* ===========================
+   WELCOME BANNER
+=========================== */
+.welcome-banner {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 60%, var(--accent3) 100%);
+  border-radius: var(--radius);
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: var(--shadow2);
+  margin-bottom: 4px;
+}
+
+.welcome-left { display: flex; flex-direction: column; gap: 6px; }
+
+.welcome-greeting {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.welcome-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.88);
+  font-style: italic;
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.welcome-date {
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.75);
+  text-align: right;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+[data-theme="dark"] .welcome-banner {
+  background: linear-gradient(135deg, #0d4a52 0%, #0a6070 60%, #0a7a8a 100%);
+  border: 1px solid var(--border2);
+}
+
+/* ===========================
    DASHBOARD
 =========================== */
 .stat-card {
-  padding: 20px;
+  padding: 22px 24px;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 .stat-number {
   font-family: var(--font-display);
-  font-size: 36px;
-  font-weight: normal;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .stat-label {
-  font-size: 12px;
-  color: var(--text3);
+  font-size: 13px;
+  color: var(--text2);
   text-transform: uppercase;
-  letter-spacing: 0.07em;
-  margin-top: 4px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-top: 6px;
 }
 
 .course-card {
@@ -1288,7 +1343,17 @@ table.curriculum-table {
 
     <!-- =================== DASHBOARD =================== -->
     <div class="tab-panel active" id="tab-dashboard">
-      <div class="section-title">🏠 Dashboard Overview</div>
+
+      <!-- Welcome Banner -->
+      <div id="welcomeBanner" class="welcome-banner">
+        <div class="welcome-left">
+          <div class="welcome-greeting" id="welcomeGreeting">Welcome Back, Scholar 👋</div>
+          <div class="welcome-sub">Stay consistent, trust God in the process, and watch the progress grow.</div>
+        </div>
+        <div class="welcome-date" id="welcomeDate"></div>
+      </div>
+
+      <div class="section-title" style="margin-top:20px;">🏠 Dashboard Overview</div>
 
       <!-- Stats row -->
       <div class="grid-4" style="margin-bottom:20px;" id="statsRow"></div>
@@ -3232,7 +3297,35 @@ function applyRoutineSettings(id) {
 // Render on page load and when study tab opened
 document.addEventListener('DOMContentLoaded', () => {
   renderRoutineCards();
+  initWelcomeBanner();
 });
+
+// -------------------- WELCOME BANNER --------------------
+function initWelcomeBanner() {
+  const now = new Date();
+  const hour = now.getHours();
+
+  // Time-aware greeting
+  let timeGreeting = 'Welcome Back, Scholar 👋';
+  if (hour >= 5 && hour < 12)       timeGreeting = 'Good Morning, Scholar ☀️';
+  else if (hour >= 12 && hour < 17) timeGreeting = 'Good Afternoon, Scholar 📖';
+  else if (hour >= 17 && hour < 21) timeGreeting = 'Good Evening, Scholar 🌆';
+  else                               timeGreeting = 'Burning Midnight Oil, Scholar 🌙';
+
+  const greetingEl = document.getElementById('welcomeGreeting');
+  if (greetingEl) greetingEl.textContent = timeGreeting;
+
+  // Date display
+  const dateEl = document.getElementById('welcomeDate');
+  if (dateEl) {
+    const days   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    dateEl.innerHTML = `
+      <div style="font-size:22px;font-weight:700;color:#fff;">${days[now.getDay()]}</div>
+      <div>${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}</div>
+    `;
+  }
+}
 </script>
 </body>
 </html>
