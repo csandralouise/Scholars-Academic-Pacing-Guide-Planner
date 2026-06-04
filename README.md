@@ -1,6 +1,6 @@
-# 📖 Scholar's Planner — Academic Pacing Guide
+# 📖 Scholar's Academic Pacing Guide Planner
 
-A single-file, offline-ready academic planning tool built for students who need structure, focus, and flexibility. No installations, no accounts, no subscriptions — just open the file in any modern browser and start planning.
+A single-file, offline-ready academic planning tool built for students who need structure, focus, and flexibility. No installations, no accounts, no subscriptions. Just open the file in any modern browser and start planning.
 
 ---
 
@@ -66,7 +66,7 @@ A full-featured focus timer to power your study blocks:
 
 ## Getting Started
 
-1. Open `New_Scholars_Pacing_Guide_Updated.html` in any modern browser (Chrome, Firefox, Safari, Edge)
+1. Open `index.html` in any modern browser (Chrome, Firefox, Safari, Edge)
 2. The app loads with a clean slate — no sample data
 3. Go to **Dashboard → Manage Courses** and add your courses with a course code and name
 4. Head to **Curriculum Map** to add your topics, assessments, and due dates
@@ -80,7 +80,7 @@ A full-featured focus timer to power your study blocks:
 
 All data is saved automatically to your browser's `localStorage` under keys prefixed `sp_`. Nothing is sent to any server — your academic data stays entirely on your device.
 
-Since data lives in localStorage, it is tied to the browser and device you use. If you clear browser data or use a different browser, your data will not carry over. For backup, export or print your curriculum map and pacing guide using the Print/Export button (🖨️) in the header.
+Since data lives in localStorage, it is tied to the browser and device you use. If you clear browser data or use a different browser, your data will not carry over. For backup, export or print, print your curriculum map and pacing guide using the Print/Export button (🖨️) in the header.
 
 ---
 
@@ -110,7 +110,7 @@ Since data lives in localStorage, it is tied to the browser and device you use. 
 
 ## File Structure
 
-This is a single self-contained HTML file. Everything — HTML, CSS, and JavaScript — lives inside `New_Scholars_Pacing_Guide_Updated.html`. No external dependencies beyond the Inter font loaded from Google Fonts. The app works fully offline once the font has cached.
+This is a single self-contained HTML file. Everything — HTML, CSS, and JavaScript — lives inside `index.html`. No external dependencies beyond the Inter font loaded from Google Fonts. The app works fully offline once the font has cached.
 
 ---
 
